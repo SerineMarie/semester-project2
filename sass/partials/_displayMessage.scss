@@ -1,0 +1,21 @@
+.displayMessage {
+  display: flex;
+  justify-content: center;
+}
+
+.messageWarning {
+  border: 2px solid getColor(yellow);
+  background: getColor(yellow);
+  color: black;
+}
+
+.messageError {
+  background: getColor(lightgrey);
+  color: getColor(burgundy-shade);
+}
+
+.messageSuccess {
+  border: 2px solid getColor(green);
+  background: getColor(green);
+  color: black;
+}

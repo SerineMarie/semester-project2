@@ -1,0 +1,82 @@
+.nav_container {
+  background: getColor(lightgrey);
+  border-bottom: 1px solid getColor(darkgrey);
+}
+.userWelcome {
+  color: getColor(green);
+  font-size: 1.5rem;
+  position: absolute;
+  left: 25%;
+  top: 2%;
+  @media (min-width: 760px) {
+    top: 0%;
+    font-size: 1.5rem;
+    left: 70%;
+  }
+  @media (min-width: 870px) {
+    top: 0%;
+    font-size: 1.8rem;
+    left: 70%;
+  }
+}
+.menu {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+  padding-left: 2%;
+}
+.menu_container {
+  list-style: none;
+
+  & a {
+    text-decoration: none;
+    color: getColor(burgundy);
+
+    &.active {
+      color: getColor(green);
+    }
+
+    &:hover {
+      color: getColor(burgundy-shade);
+      text-decoration: underline;
+    }
+  }
+}
+
+.menu_container,
+#hamburger-menu {
+  display: none;
+}
+.hamburger-label {
+  float: right;
+  color: getColor(burgundy);
+  padding-right: 15%;
+  font-size: 2rem;
+  display: block;
+}
+
+#hamburger-menu:checked ~ .menu_container {
+  display: block;
+}
+
+@media (min-width: 770px) {
+  .menu_container {
+    display: inline;
+    width: 100%;
+  }
+  .menu {
+    display: block;
+    font-size: 1.8rem;
+    width: 80%;
+    position: absolute;
+    top: 2%;
+    left: 10%;
+
+    & a {
+      margin-left: 2%;
+    }
+  }
+  .hamburger-label {
+    display: none;
+  }
+}

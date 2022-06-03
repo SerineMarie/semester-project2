@@ -1,0 +1,25 @@
+.banner_container {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+.card_title {
+  text-align: center;
+}
+
+.card_featured {
+  width: 90%;
+  display: flex;
+  border: 1px solid getColor(darkgrey);
+  background: getColor(lightgrey);
+  border-radius: 20px;
+  margin: 2%;
+  padding: 10px;
+  @media (min-width: 900px) {
+    width: 40%;
+  }
+  @media (max-width: 460px) {
+    display: block;
+  }
+}

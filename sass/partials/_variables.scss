@@ -1,0 +1,15 @@
+$colors: (
+  lightgrey: #fcfcfc,
+  darkgrey: #dcdcdc,
+  green: #2bab5b,
+  green-tint: #45e676,
+  burgundy: #ab413c,
+  burgundy-shade: #6b2925,
+  yellow: #ffff44,
+);
+
+@function getColor($color) {
+  @return map-get($colors, $color);
+}
+
+$font: "Poppins", sans-serif;

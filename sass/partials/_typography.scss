@@ -1,0 +1,30 @@
+h1,
+h2,
+h4,
+p {
+  font-family: $font;
+}
+
+h1 {
+  font-style: italic;
+  font-weight: 700;
+  color: getColor(burgundy);
+}
+
+h2 {
+  font-weight: 500;
+  color: getColor(burgundy-shade);
+}
+
+p {
+  font-weight: 200;
+  color: black;
+}
+
+a {
+  text-decoration: none;
+}
+
+.card_body-text {
+  font-size: 1.2rem;
+}
