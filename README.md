@@ -13,7 +13,7 @@ This page is not fully working, as there are mistakes made in javascript.
 - Upload to Strapi
 - Using SASS
 
-## Bulit with
+## Built with
 
 - Regular HTML, JavaScript and SASS
 
